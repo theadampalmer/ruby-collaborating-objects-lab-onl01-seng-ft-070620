@@ -22,16 +22,16 @@ class Artist
       end
   end
  
-  # def self.find_or_create_by_name(name)
-  #   artist = Artist.all.detect do |artist|
-  #     artist.name == name
-  #   end
-  #   if !artist.nil?
-  #     artist
-  #   else
-  #     Artist.new(name)
-  #   end
-  # end
+  def self.find_or_create_by_name(name)
+    artist = Artist.all.detect do |artist|
+      artist.name == name
+    end
+    if !artist.nil?
+      artist
+    else
+      Artist.new(name)
+    end
+  end
   
   # def print_songs
   #   Song.all.each do |song|
