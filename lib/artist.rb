@@ -16,11 +16,11 @@ class Artist
     song.artist = self
   end
   
-  # def songs
-  #     Song.all.filter do |song|
-  #         song.artist == self
-  #     end
-  # end
+  def songs
+      Song.all.filter do |song|
+          song.artist == self
+      end
+  end
  
   # def self.find_or_create_by_name(name)
   #   artist = Artist.all.detect do |artist|
